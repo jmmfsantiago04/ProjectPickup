@@ -1,28 +1,27 @@
-// components/ShopBanner.tsx
-import React from 'react';
-import Image from 'next/image';
+import Image from "next/image";
 
-const Banner: React.FC = () => {
+const Banner = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center bg-gray py-24 px-8 md:py-24 md:px-8" style={{ padding: '6rem 2rem' }}>
-      <div className="w-full md:w-1/2 mb-8 md:mb-0">
-        <h1 className="m-0" title="Shop in Korea, Pick it up at your door." style={{ fontSize: '64px', color: 'black' }}>
-          Shop in Korea, Pick it up at your door.
+    <section className="flex items-start py-24 px-8 max-w-7xl mx-auto gap-10 justify-center">
+      <div className="w-[44.7rem] h-[16.3rem] flex flex-col gap-12">
+        <h1 className="font-bold text-[4rem] leading-[normal]">
+          Shop in Korea,
+          <br />
+          Pick it up at your door.
         </h1>
-        <p style={{ fontSize: '32px', color: 'black' }}>
-          Korean Free address & Shopping helper.
-        </p>
+        <p className="text-2xl">Korean Free address & Shopping helper.</p>
       </div>
-      <div className="w-full md:w-1/2 flex justify-center">
-        <Image 
-          src="/banner.png" 
+      <div className="relative w-[26.25rem] h-[23.625rem]">
+        <img
+          src="/banner.png"
           alt="Shopping banner"
-          width={500} 
-          height={300}
-          layout="intrinsic" 
+          height={378}
+          width={420}
+          className="object-cover absolute top-0 right-0 w-full"
+          loading="eager"
         />
       </div>
-    </div>
+    </section>
   );
 };
 
