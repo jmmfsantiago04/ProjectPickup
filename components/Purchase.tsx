@@ -1,31 +1,30 @@
 import React from 'react';
 
 export default function Purchase() {
+  const purchaseDetails = [
+    { label: 'Online Purchase ........................', value: '2,000KRW/Website by order' },
+    { label: 'Online Purchase (Seoul Only) ...................', value: '40,000KRW/1hour' },
+    { label: '+15,000KRW/Additional hours', value: '' },
+  ];
+
   return (
-    <div className="w-full bg-gray-100">
-      <div className="p-24 max-w-screen-lg mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-[50px]">Purchase</h1>
-        <div className="text-left" style={{ maxWidth: '1000px' }}>
-          <p className="mt-4 text-2xl">
+    <section className="w-full bg-gray-100">
+      <section className="p-24 max-w-screen-lg mx-auto">
+        <h1 className="text-4xl font-bold text-center mb-12">Purchase</h1>
+        <article className="mt-4 text-2xl text-left max-w-[62.5rem] mx-auto">
+          <p>
             We can help to purchase the items you want by the Korean online or offline shop.
           </p>
-        </div>
-        <div className="flex justify-center mt-[70px]">
-          <div className="bg-[#FDEDCE] p-16 rounded-[25px_25px_25px_25px] w-[830px] h-[251px] flex flex-col justify-start">
-            <div className="flex justify-between mb-4 w-full">
-              <span className="font-bold text-2xl">Online Purchase ........................</span>
-              <span className="font-bold text-2xl">2,000KRW/Website by order</span>
-            </div>
-            <div className="flex justify-between mb-4 w-full">
-              <span className="font-bold text-2xl">Online Purchase (Seoul Only) ...................</span>
-              <span className="font-bold text-2xl">40,000KRW/1hour</span>
-            </div>
-            <div className="flex justify-end w-full">
-              <span className="font-bold text-2xl">+15,000KRW/Additional hours</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+        </article>
+        <section className="bg-[#FDEDCE] p-16 rounded-2xl w-[51.875rem] flex flex-col justify-start mt-16 mx-auto">
+          {purchaseDetails.map((item, index) => (
+            <article key={index} className={`flex ${item.value ? 'justify-between' : 'justify-end'} mb-4 w-full`}>
+              <span className="font-bold text-2xl">{item.label}</span>
+              {item.value && <span className="font-bold text-2xl">{item.value}</span>}
+            </article>
+          ))}
+        </section>
+      </section>
+    </section>
   );
 }
