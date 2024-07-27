@@ -24,6 +24,7 @@ const config = {
       colors: {
         primaryOrange: "#F8B62D",
         primaryBeige: "#FDEDCE",
+        primaryGray: "#F5F5F5",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

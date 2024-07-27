@@ -8,9 +8,9 @@ export default function Optional() {
   ];
 
   return (
-    <section className="p-24 w-full max-w-screen-lg mx-auto">
-      <h1 className="text-4xl font-bold text-center mb-12">Optional</h1>
-      <article className="mt-4 text-2xl text-left max-w-[62.5rem] mx-auto">
+    <section className="py-24 w-full max-w-[1000px] mx-auto flex flex-col justify-center items-center">
+      <h1 className="text-[2.5rem] leading-[3.405rem] font-bold text-center mb-24">Optional</h1>
+      <article className="text-2xl text-left max-w-[62.5rem] mx-auto">
         <p>
           If you want to check your package inside, please use the unboxing service.<br />
           We can help you check the status and quantity.<br />
@@ -18,7 +18,7 @@ export default function Optional() {
           You can save shipping costs by drastically reducing the volume and weight.
         </p>
       </article>
-      <section className="bg-[#FDEDCE] p-16 rounded-2xl w-[51.875rem] flex flex-col justify-start mt-16 mx-auto">
+      <section className="bg-primaryBeige py-[5.15625rem] px-[1.8125rem] rounded-3xl w-[51.875rem]  flex-col justify-start my-24 mx-[5.3125rem]">
         {optionalDetails.map((item, index) => (
           <article key={index} className="flex justify-between mb-4 w-full">
             <span className="font-bold text-2xl">{item.label}</span>

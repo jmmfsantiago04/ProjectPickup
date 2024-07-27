@@ -6,9 +6,9 @@ import Forwading from "@/components/Forwading";
 const service: React.FC = () => {
   return (
     <div>
-    <Warehouse />  
-    <Purchase />   
-    <Optional />
+    <Warehouse />
+    <Purchase />
+    <Optional />  
     <Forwading />
     </div>
   );
