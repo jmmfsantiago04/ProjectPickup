@@ -37,15 +37,15 @@ export default function Optional() {
   const isTablet = (size.width || 0) > 768 && (size.width || 0) <= 1024;
 
   const mobileOptionalDetails = [
-    { label: 'Unboxing with Video ..........................', value: '2,000KRW' },
-    { label: 'Unboxing with Photo ..........................', value: '1,000KRW' },
-    { label: 'Inclusion Only ...................................', value: '1,500KRW' },
+    { label: 'Unboxing with Video ', value: '2,000KRW/Package' },
+    { label: 'Unboxing with Photo ', value: '1,000KRW/Package' },
+    { label: 'Inclusion Only', value: '1,500KRW/album' },
   ];
 
   const tabletOptionalDetails = [
-    { label: 'Unboxing with Video .........................', value: '2,000KRW/Package' },
-    { label: 'Unboxing with Photo ..........................', value: '1,000KRW/Package' },
-    { label: 'Inclusion Only .......................................', value: '1,500KRW/album' },
+    { label: 'Unboxing with Video ', value: '2,000KRW/Package' },
+    { label: 'Unboxing with Photo ', value: '1,000KRW/Package' },
+    { label: 'Inclusion Only ', value: '1,500KRW/album' },
   ];
 
   const desktopOptionalDetails = [

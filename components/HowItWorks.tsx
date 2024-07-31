@@ -29,7 +29,7 @@ const HowItWorks: React.FC = () => {
       <h2 className="text-center text-[4rem] font-bold mb-16 text-black">
         How It Works
       </h2>
-      <div className="grid grid-cols-3 gap-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-20">
         {data.map((item, index) => (
           <div key={index} className="flex flex-col items-center gap-8">
             <img
@@ -43,8 +43,8 @@ const HowItWorks: React.FC = () => {
                 index === 2 && "w-[4.469rem] h-20"
               )}
             />
-            <dl className="flex flex-col gap-8 text-2xl text-center">
-              <dt className="font-bold bg-black text-white flex items-center justify-center rounded-[2.25rem] h-[7.25rem]">
+            <dl className="flex flex-col gap-4 sm:gap-8 text-lg sm:text-2xl text-center">
+              <dt className="font-bold bg-black text-white flex items-center justify-center rounded-[2.25rem] h-[5rem] sm:h-[7.25rem] px-4">
                 <span dangerouslySetInnerHTML={{ __html: item.title }} />
               </dt>
               <dd className="">{item.description}</dd>

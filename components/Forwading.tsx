@@ -36,16 +36,16 @@ export default function Forwarding() {
   const isTablet = (size.width || 0) > 768 && (size.width || 0) <= 1024;
 
   const mobileForwardingDetails = [
-    { label: 'Consolidation ...............................................', value: 'Free' },
-    { label: 'Forwarding ...................................................', value: 'Free*' },
-    { label: 'Pick up .....................................', value: '3,000KRW/Package' },
+    { label: 'Consolidation ', value: 'Free' },
+    { label: 'Forwarding ', value: 'Free*' },
+    { label: 'Pick up ', value: '3,000KRW/Package' },
     { label: '* please refer to the shipping rate as shipping charge', value: '' },
   ];
 
   const tabletForwardingDetails = [
-    { label: 'Consolidation .................................................................', value: 'Free' },
-    { label: 'Forwarding ...................................................................', value: 'Free*' },
-    { label: 'Pick up ......................................................', value: '3,000KRW/Package' },
+    { label: 'Consolidation ', value: 'Free' },
+    { label: 'Forwarding ', value: 'Free*' },
+    { label: 'Pick up ', value: '3,000KRW/Package' },
     { label: '* please refer to the shipping rate as shipping charge', value: '' },
   ];
 

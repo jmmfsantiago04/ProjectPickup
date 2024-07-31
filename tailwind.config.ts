@@ -21,6 +21,9 @@ const config = {
       fontFamily: {
         sans: ["Noto Sans", "sans-serif"],
       },
+      screens: {
+        'custom-lg': '1165px',
+      },
       colors: {
         primaryOrange: "#F8B62D",
         primaryBeige: "#FDEDCE",

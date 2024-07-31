@@ -32,18 +32,18 @@ const useWindowSize = (): WindowSize => {
 
 export default function Purchase() {
   const size = useWindowSize();
-  const isMobile = (size.width || 0) <= 768;
-  const isTablet = (size.width || 0) > 768 && (size.width || 0) <= 1024;
+  const isMobile = (size.width || 0) <= 300;
+  const isTablet = (size.width || 0) > 300 && (size.width || 0) <= 1024;
 
   const mobilePurchaseDetails = [
-    { label: 'Online Purchase .....................', value: '2,000KRW/Website' },
-    { label: 'Online Purchase (Seoul) ..............', value: '40,000KRW/1hr' },
-    { label: '+15,000KRW/Extra hour', value: '' },
+    { label: 'Online Purchase ', value: '2,000KRW' },
+    { label: 'Online Purchase (Seoul) ', value: '40,000KRW/1hr' },
+    { label: '+15,000KRW/Extra hr', value: '' },
   ];
 
   const tabletPurchaseDetails = [
-    { label: 'Online Purchase ............................', value: '2,000KRW/Website by order' },
-    { label: 'Online Purchase (Seoul Only) .......................', value: '40,000KRW/1hour' },
+    { label: 'Online Purchase ', value: '2,000KRW/Website by order' },
+    { label: 'Online Purchase (Seoul Only) ', value: '40,000KRW/1hour' },
     { label: '+15,000KRW/Additional hours', value: '' },
   ];
 
@@ -71,8 +71,8 @@ export default function Purchase() {
         <section className="bg-primaryBeige py-8 sm:py-16 px-4 sm:px-8 rounded-3xl w-full max-w-[51.875rem] flex flex-col justify-start mt-8 sm:mt-[5.5625rem] mb-12 sm:mb-24 mx-4 sm:mx-[5.3125rem]">
           {purchaseDetails.map((item, index) => (
             <article key={index} className={`flex flex-col sm:flex-row ${item.value ? 'justify-between' : 'justify-end'} mb-4 w-full`}>
-              <span className="font-bold text-lg sm:text-2xl">{item.label}</span>
-              {item.value && <span className="font-bold text-lg sm:text-2xl">{item.value}</span>}
+              <span className="font-bold text-base sm:text-2xl">{item.label}</span>
+              {item.value && <span className="font-bold text-base sm:text-2xl">{item.value}</span>}
             </article>
           ))}
         </section>
